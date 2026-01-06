@@ -17,6 +17,11 @@ class RNPieChartView: RNChartViewBase {
         return _dataExtract
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        _chart.frame = self.bounds // Adjust the chart's frame to fill the entire component's bounds
+    }
+
     override init(frame: CoreGraphics.CGRect) {
 
         self._chart = PieChartView(frame: frame)

@@ -4,9 +4,9 @@
     "type": "git",
     "url": "https://github.com/urvish-procare/react-native-charts-wrapper.git"
   },
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "A react-native charts support both android and iOS.",
-  "author": "wuxudong",
+  "author": "urvish-procare",
   "license": "MIT",
   "nativePackage": true,
   "homepage": "https://github.com/urvish-procare/react-native-charts-wrapper",

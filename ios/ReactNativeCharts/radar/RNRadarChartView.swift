@@ -18,6 +18,11 @@ class RNRadarChartView: RNYAxisChartViewBase {
         return _dataExtract
     }
 
+     override func layoutSubviews() {
+        super.layoutSubviews()
+        _chart.frame = self.bounds // Adjust the chart's frame to fill the entire component's bounds
+    }
+
     override func setYAxis(_ config: NSDictionary) {
         let json = BridgeUtils.toJson(config)
         let yAxis = _chart.yAxis
